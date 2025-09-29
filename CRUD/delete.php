@@ -2,7 +2,7 @@
 
 $erro = isset($_GET['msg']) ?? 0;
 if($erro > 0 ){
-    echo 'email inválido ou não registrado.';
+    echo 'EMAIL INVÁLIDO OU NÃO REGISTRADO.';
 }
 ?>
 <!DOCTYPE html>

@@ -5,7 +5,6 @@ $erro = isset($_GET['msg']) ?? 0;
 if($erro > 0){
     echo 'dados inválidos.';
 }
-
 ?>
 
 <!DOCTYPE html>

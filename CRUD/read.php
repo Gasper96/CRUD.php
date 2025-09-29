@@ -1,4 +1,8 @@
 <?php
+$msg = $_GET['msg'] ?? 0;
+if($msg > 0){
+    echo 'EMAIL NÃO REGISTRADO OU INVÁLIDO.';
+}
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +14,7 @@
 </head>
 <body>
     <form action='execute.php' method="POST">
-        <label>Informe o email: <input type="email" placeholder="email"></label><br>
+        <label>Informe o email: <input name='email' type="email" placeholder="email"></label><br>
         <input type="hidden" name='msg' value='r'>
         <button>ENVIAR</button>
     </form>
