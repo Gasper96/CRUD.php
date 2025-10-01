@@ -10,13 +10,17 @@ if($msg > 0){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>read</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action='execute.php' method="POST">
         <label>Informe o email: <input name='email' type="email" placeholder="email"></label><br>
         <input type="hidden" name='msg' value='r'>
         <button>ENVIAR</button>
+    </form>
+    <form action="index.php">
+        <button>VOLTAR</button>
     </form>
 </body>
 </html>
